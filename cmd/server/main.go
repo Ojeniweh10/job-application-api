@@ -40,6 +40,7 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
-	r.Run(":" + port)
 	fmt.Println("server started on port:", port)
+	r.Run(":" + port)
+	
 }
