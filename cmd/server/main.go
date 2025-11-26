@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"job-app/internal/repository"
 	"job-app/internal/routes"
 	"os"
@@ -39,5 +40,7 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
+	fmt.Println("server started on port:", port)
 	r.Run(":" + port)
+	
 }
